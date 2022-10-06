@@ -1,0 +1,9 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: board
+  profiles:
+    active: prod
+  config:
+    import: optional:configserver:http://root:1234@localhost:8888
